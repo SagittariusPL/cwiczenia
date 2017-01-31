@@ -43,8 +43,8 @@ public class Zamowienie
 		return suma;
 	}
 	
-	 String toString()
-	 {
+	
+	 
 		 
-	 }
+	 
 }
