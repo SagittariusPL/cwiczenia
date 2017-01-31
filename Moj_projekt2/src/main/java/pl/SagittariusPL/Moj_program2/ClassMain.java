@@ -1,29 +1,45 @@
 package pl.SagittariusPL.Moj_program2;
 
-
+import java.io.File;
+import java.io.BufferedOutputStream;
 import java.io.FileNotFoundException;
-
-
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.Scanner;
 
 public class ClassMain 
 {
 	
 	static Scanner sc = new Scanner(System.in);
-	public static void main(String[] args) throws FileNotFoundException
+	public static void main(String[] args) throws Exception
 	{
 		
-		/**
-		 * Kuba komentarz do Ciebie!
-		 */
 		
-		Pozycja p1= new Pozycja("Mleko",  1, 7);
+		Pozycja p1= new Pozycja("Mleko",  5, 7);
 		System.out.println(p1);
-		Pozycja p2= new Pozycja("Chleb",  2, 3.5);
+		Pozycja p2= new Pozycja("Chleb",  6, 4);
 		System.out.println(p2);
-		System.out.println(p1.obliczWartosc()+p2.obliczWartosc());
-		 
-	      
+		Pozycja p3= new Pozycja("Chleb",  30, 4.);
+		System.out.println(p3);
+		Pozycja p4= new Pozycja("Bagietka",  11, 4);
+		System.out.println(p4);
+		//System.out.println(p1.obliczWartoscZRabatem());
+		//System.out.println(p2.obliczWartoscZRabatem());
+		//System.out.println(p3.obliczWartoscZRabatem());
+		//System.out.println(p4.obliczWartoscZRabatem());
+		Zamowienie z= new Zamowienie();
+		
+		z.dodajPozycje(p1);
+		z.dodajPozycje(p2);
+		z.dodajPozycje(p3);
+		z.dodajPozycje(p4);
+		//z.usunPozycje(1);
+		//z.edytujPozycje(2);
+		System.out.println(z);
+		
+		z.zapiszZamowienie( z.toString());
+		//z.wczytajZamowienie("plik");
 	}
 		
 		
