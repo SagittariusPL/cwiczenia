@@ -13,6 +13,10 @@ public class ClassMain
 	public static void main(String[] args) throws FileNotFoundException
 	{
 		
+		/**
+		 * Kuba komentarz do Ciebie!
+		 */
+		
 		Pozycja p1= new Pozycja("Mleko",  1, 7);
 		System.out.println(p1);
 		Pozycja p2= new Pozycja("Chleb",  2, 3.5);
