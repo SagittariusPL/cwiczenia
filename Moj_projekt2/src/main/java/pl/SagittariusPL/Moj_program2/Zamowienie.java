@@ -6,15 +6,8 @@ public class Zamowienie
 	int maksRozmiar;
 	Pozycja[] pozycje= new Pozycja[maksRozmiar];
 	
-	{
-		//Pozycja[] pozycje = new Pozycja[10];
-		
-		//for(int i=0; i<pozycje.length; i++)
-    {
-        //pozycje[i] = new Pozycja(null, i+1, i);//this will call constructor.
-    }
+	
     
-	}
 	
 	public int maksRozmiar()
 			{
